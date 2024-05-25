@@ -1,3 +1,10 @@
-p{
-    font-size: 10;
-}
+
+
+@media only screen and (max-width: 900px) {
+    .mobile {
+      display: none;
+    }
+  }
+
+  
+  

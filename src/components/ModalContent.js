@@ -12,14 +12,14 @@ import "./style.css"
 
 const ModalContent = () => {
 
-    return <Box height={"100%"}  >
-        <Grid container width="100%" height={"100%"} spacing={2} p={3} overflow={"scroll"}>
+    return <Box height={"100%"} p={2}  >
+        <Grid container width="100%" height={"100%"} spacing={2} overflow={"scroll"}>
             <Grid item xs={12} md={6} height={"100%"}   >
                 <Grid xs={12} xl={6} height={"70%"}  >
                     <img style={{ width: "100%", height: "100%" }} src={image1} />
                 </Grid>
 
-                <Grid height={"30%"} xs={12} xl={6} container  justifyContent={"space-between"} className="image" >
+                <Grid height={"30%"} xs={12} xl={6} container justifyContent={"space-between"} className="image" >
                     <Grid item xs={4} pr={1}>
                         <img style={{ width: "100%", height: "100%" }} src={image2} />
                     </Grid>
@@ -33,48 +33,48 @@ const ModalContent = () => {
 
             </Grid>
 
-            <Grid item xs={12} md={6} spacing={2}   position={"relative"}  >
-                <Grid item xs={12} xl={6}>
+            <Grid item xs={12} md={6} spacing={2} position={"relative"}   >
+                <Grid item xs={12} xl={6} pl={1} >
                     <Typography> Tangled Up In Green</Typography>
                 </Grid>
-                <Grid item xs={12} xl={6}>
+                {/* <Grid item xs={12} xl={6} pt={2} pl={1} >
                     <Typography> Tangled Up In Green</Typography>
-                </Grid>
-                <Grid item xs={12} xl={6}>
+                </Grid> */}
+                <Grid item xs={12} xl={6} pl={1} >
                     <p style={{ fontSize: 10 }}> Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.</p>
                 </Grid>
                 <hr />
 
-                <Grid container xs={12} xl={6} flex={1} overflow={"hidden"} height={"65%"}  >
-                    <Grid item xs={12} md={7} spacing={2}>
-                        <Grid container item xs={12} >
+                <Grid container xs={12} xl={6} flex={1} overflow={"hidden"} height={"65%"} pl={1}  >
+                    <Grid item xs={12} md={7} spacing={2} >
+                        <Grid container item xs={12} pl={1} justifyContent={"space-between"} >
                             <Grid item xs={4} container >
-                                <Box display={"flex"} flexDirection={"column"} gap={1}>
-                                    <Box display={"flex"} alignItems={"center"} gap={2} > <CurrencyRupeeIcon sx={{ color: "#AC8038" }} /> 1.4 Cr </Box>
-                                    <Box fontSize={12}>(6990 / Sq Ft)</Box>
+                                <Box display={"flex"} flexDirection={"column"} >
+                                    <Box display={"flex"} alignItems={"center"} gap={1} > <CurrencyRupeeIcon sx={{ color: "#AC8038" }} /> <p style={{ color: "#AC8038" }}>1.4 Cr</p> </Box>
+                                    <Box fontSize={11}>(6990 / Sq Ft)</Box>
                                 </Box>
 
                             </Grid>
 
                             <Grid item xs={4} container alignItems={"center"} gap={2}>
-                                <Box display={"flex"} flexDirection={"column"} gap={1}>
-                                    <Box display={"flex"} alignItems={"center"} gap={2} >  <PhotoSizeSelectLargeIcon sx={{ color: "#AC8038" }} /> Plot Size</Box>
-                                    <Box fontSize={12}>1800 to 7200 Sq Ft</Box>
+                                <Box display={"flex"} flexDirection={"column"} >
+                                    <Box display={"flex"} alignItems={"center"} gap={1} >  <PhotoSizeSelectLargeIcon sx={{ color: "#AC8038" }} /><p style={{ color: "#AC8038" }}>Plot Size</p> </Box>
+                                    <Box fontSize={11}>1800 to 7200 Sq Ft</Box>
                                 </Box>
 
                             </Grid>
 
                             <Grid item xs={4} container alignItems={"center"} gap={2}>
-                                <Box display={"flex"} flexDirection={"column"} gap={1}>
-                                    <Box display={"flex"} alignItems={"center"} gap={2} > <Crop54Icon sx={{ color: "#AC8038" }} /> Area</Box>
-                                    <Box fontSize={12}>115 Acres</Box>
+                                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} >
+                                    <Box display={"flex"} alignItems={"center"} gap={1} > <Crop54Icon sx={{ color: "#AC8038" }} /><p style={{ color: "#AC8038" }}>Area</p> </Box>
+                                    <Box fontSize={11}>115 Acres</Box>
                                 </Box>
                             </Grid>
                         </Grid>
                         <Grid item xs={12} > <hr /></Grid>
 
 
-                        <Grid container item xs={12} >
+                        <Grid container item xs={12} pl={1}  >
                             <Grid item xs={4}>
                                 <Box display={"flex"} flexDirection={"column"} gap={1}>
                                     <Box display={"flex"} alignItems={"center"} gap={2} >
@@ -104,41 +104,57 @@ const ModalContent = () => {
                         <Grid item xs={12} > <hr /></Grid>
 
 
-                        <Grid container item xs={12} spacing={2}  >
+                        <Grid container item xs={12} spacing={2} p={2} >
                             <Grid item xs={12}><Typography>30 + Amenties</Typography></Grid>
 
                             <Grid item xs={6} container alignItems={"center"} gap={2}>
-                                <MenuBookIcon sx={{ color: "#AC8038" }} fontSize="10" /> Children's
+                                <MenuBookIcon sx={{ color: "#AC8038" }} /> <Typography fontSize={12}> Children's</Typography>
                             </Grid>
                             <Grid item xs={6} container alignItems={"center"} gap={2}>
-                                <MenuBookIcon sx={{ color: "#AC8038" }} fontSize="10" /> Children's
+                                <MenuBookIcon sx={{ color: "#AC8038" }} /> <Typography fontSize={12}> Children's</Typography>
                             </Grid>
                             <Grid item xs={6} container alignItems={"center"} gap={2}>
-                                <MenuBookIcon sx={{ color: "#AC8038" }} fontSize="10" /> Children's
+                                <MenuBookIcon sx={{ color: "#AC8038" }} /> <Typography fontSize={12}> Children's</Typography>
                             </Grid>
                             <Grid item xs={6} container alignItems={"center"} gap={2}>
-                                <MenuBookIcon sx={{ color: "#AC8038" }} fontSize="10" /> Children's
+                                <MenuBookIcon sx={{ color: "#AC8038" }} /> <Typography fontSize={12}> Children's</Typography>
                             </Grid>
                             <Grid item xs={6} container alignItems={"center"} gap={2}>
-                                <MenuBookIcon sx={{ color: "#AC8038" }} fontSize="10" /> Children's
+                                <MenuBookIcon sx={{ color: "#AC8038" }} /> <Typography fontSize={12}> Children's</Typography>
                             </Grid>
                             <Grid item xs={6} container alignItems={"center"} gap={2}>
-                                <MenuBookIcon sx={{ color: "#AC8038" }} fontSize="10" /> Children's
+                                <MenuBookIcon sx={{ color: "#AC8038" }} /> <Typography fontSize={12}> Children's</Typography>
                             </Grid>
+                            {/* <Grid item xs={6} container alignItems={"center"} gap={2}>
+                                    <MenuBookIcon sx={{ color: "#AC8038" }}  /> <Typography fontSize={12}> Children's</Typography>
+                                </Grid>
+                                <Grid item xs={6} container alignItems={"center"} gap={2}>
+                                    <MenuBookIcon sx={{ color: "#AC8038" }}  /> <Typography fontSize={12}> Children's</Typography>
+                                </Grid> */}
+                            {/* <Grid item xs={6} container alignItems={"center"} gap={2}>
+                                <MenuBookIcon sx={{ color: "#AC8038" }}  /> <Typography fontSize={12}> Children's</Typography>
+                            </Grid>
+                            <Grid item xs={6} container alignItems={"center"} gap={2}>
+                                <MenuBookIcon sx={{ color: "#AC8038" }}  /> <Typography fontSize={12}> Children's</Typography>
+                            </Grid>  */}
 
                         </Grid>
                     </Grid>
 
-                    <Grid container item xs={12} md={5}>
-                        <img src={map} style={{ width: "100%", height: "100%" }} />
+                    <Grid container item xs={12} md={5} p={1}>
+                        <img src={map} style={{ width: "100%", height: "100%", borderRadius: "8px" }} />
                     </Grid>
                 </Grid>
 
 
-                <Grid container mt={3}  spacing={1} position={"sticky"} bottom={0} backgroundColor="white" >
-                    <Grid item xs={4} container justifyContent={"flex-end"}><Button sx={{ color: "#AC8038", width: "100%" }} variant="outlined">Chat Now</Button></Grid>
-                    <Grid item xs={4} container justifyContent={"center"}><Button sx={{ color: "#AC8038", width: "100%" }} variant="outlined">Call Now</Button></Grid>
-                    <Grid item xs={4} container justifyContent={"flex-start"}><Button sx={{ background: "#AC8038", width: "100%" }} variant="contained"> Site Visit</Button></Grid>
+                <Grid container  spacing={1} backgroundColor="white" position={"sticky"} bottom={0} mt={5}  >
+                    <Grid item xs={4} container justifyContent={"flex-end"}><Button size="small" sx={{ color: "#AC8038", width: "100%" }} variant="outlined">Chat Now</Button></Grid>
+                    <Grid item xs={4} sx={{
+                        '@media(maxWidth: 900px)': {
+                            display: "none"
+                        }
+                    }} container justifyContent={"center"}><Button size="small" sx={{ color: "#AC8038", width: "100%" }} variant="outlined">Call Now</Button></Grid>
+                    <Grid item xs={4} container justifyContent={"flex-start"}><Button size="small" sx={{ background: "#AC8038", width: "100%" }} variant="contained"> Site Visit</Button></Grid>
                 </Grid>
             </Grid>
         </Grid>
